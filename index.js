@@ -40,4 +40,22 @@ app = {
     this.projects.forEach(project => console.log(project));
   }
 }
-console.log(todoItem);
+// console.log(todoItem);
+
+function createTodoItem(id, title, description, dueDate, priority, repeatWeekly, done, notes, project) {
+  return {
+    id,
+    title,
+    description,
+    dueDate,
+    priority,
+    repeatWeekly,
+    done,
+    notes,
+    project
+  }
+}
+
+let todo1 = new createTodoItem(1,"titulo", 'la descirption', '3/8/20','high', true, false, "algunas notas", "escuela");
+
+console.log(todo1);
