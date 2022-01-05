@@ -4,17 +4,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Toodoolee</title>
+    <title>Todo App</title>
   </head>
   <body>
     <header>
-      <h1>Your to do list app</h1>
-      <p>The best one in town baby!</p>
+        <h1>Your to do list app</h1>
+      <!-- <p>The best one in town baby!</p> -->
     </header>
 
-    <div class="app-container">
-
-    </div>
+    <div class="app-container" id="app">
+        <div class="sidebar">
+            <h2>projects</h2>
+            <nav class="vertical-nav">
+                <a class="nav-item nav-item-active">daily</a>
+                <a class="nav-item">weekly</a>
+                <a class="nav-item">monthly</a>
+            </nav>
+        </div>
+        <div class="main-content">
+            <nav class="horizontal-nav">
+                <a class="tab-button tab-active">daily</a>
+                <a class="tab-button">All</a>
+            </nav>
+            <div class="todos-container">
+                <div class="todo-card">
+                  <h2>todo title</h2>
+                  <p>todo content</p>
+                  <div class="todo-card--footer">
+                      <a href="">edit</a>
+                      <a href="">delete</a>
+                  </div>
+                </div>
+                <div class="todo-card">
+                  <h2>todo title</h2>
+                  <p>todo content</p>
+                  <div class="todo-card--footer">
+                      <a href="">edit</a>
+                      <a href="">delete</a>
+                  </div>
+                </div>
+                <div class="todo-card">
+                  <h2>todo title</h2>
+                  <p>todo content</p>
+                  <div class="todo-card--footer">
+                      <a href="">edit</a>
+                      <a href="">delete</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end app-container-->
 
   <script type="text/javascript" src="index.js"></script>
   </body>
