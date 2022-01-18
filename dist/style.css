@@ -71,9 +71,13 @@ header {
 }
 
 .todos-container {
-  background: #eaeaea;
+  /* background: #eaeaea; */
+  background: red;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   height: 100%;
 }
+
 /* todo
 ==============================================================================*/
 .todo-card {
@@ -85,6 +89,9 @@ header {
   background: whitesmoke;
   transition: background 0.2s;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .todo-card:hover {
@@ -103,4 +110,17 @@ header {
 
 .todo-card--footer a:hover {
   color: dodgerblue;
+}
+
+.add-todo-card {
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.add-todo-card:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.add-todo-icon {
+  width: 40%;
+  align-self: center;
 }
